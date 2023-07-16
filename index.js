@@ -33,7 +33,7 @@ class PrettyConsoleProcessor {
   }
 }
 
-module.exports = { ConsolePrettySpanProcessor }
+module.exports = { PrettyConsoleProcessor }
 
 const colors = {
   Text: "\x1b[38;5;0253m",
