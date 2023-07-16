@@ -16,8 +16,5 @@
   },
   "peerDependencies": {
     "@opentelemetry/api": "1.x.x"
-  },
-  "dependencies": {
-    "chalk": "^5.3.0"
   }
 }
