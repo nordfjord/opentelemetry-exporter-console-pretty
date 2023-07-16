@@ -26,4 +26,4 @@ const sdk = new NodeSdk({
 
 # Screenshot
 
-![./images/screenshot.png](Image showing colourful console output)
+![Image showing colourful console output](./images/screenshot.png)
