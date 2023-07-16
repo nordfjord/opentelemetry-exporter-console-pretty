@@ -4,7 +4,7 @@ const { SpanStatusCode } = require('@opentelemetry/api');
 /**
   * @implements {import('@opentelemetry/api').SpanProcessor}
   */
-class ConsolePrettySpanProcessor {
+class PrettyConsoleProcessor {
   shutdown() {
     return Promise.resolve();
   }
@@ -57,10 +57,6 @@ const colors = {
 const close = "\x1b[0m"
 
 const chalk = Object.fromEntries(Object.entries(colors).map(([key, value]) => [key, (str) => `${value}${str}${close}`]))
-
-// Object.keys(chalk).forEach(key => {
-//   console.log(chalk[key](key))
-// })
 
 function renderValue(value) {
   switch (typeof value) {
